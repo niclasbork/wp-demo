@@ -1,0 +1,38 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "demo-theme/demo-contact-form-block",
+	"version": "0.1.0",
+	"title": "Demo Contact Form Block",
+	"category": "widgets",
+	"icon": "feedback",
+	"description": "A simple contact form block.",
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"heading": {
+			"type": "string",
+			"source": "html",
+			"selector": "h2",
+			"default": "Contact Us"
+		},
+		"toEmail": {
+			"type": "string",
+			"default": "your-email@example.com"
+		},
+		"successMessage": {
+			"type": "string",
+			"default": "Thank you for your message!"
+		},
+		"errorMessage": {
+			"type": "string",
+			"default": "There was an error sending your message. Please try again later."
+		}
+	},
+	"textdomain": "demo-contact-form-block",
+	"editorScript": "file:./build/index.js",
+	"editorStyle": "file:./build/index.css",
+	"style": "file:./build/style-index.css",
+	"viewScript": "file:./build/view.js"
+}

@@ -1,0 +1,47 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-demo-theme-demo-contact-form-block {
+	padding: 20px;
+	border: 1px solid #ccc;
+	background-color: #f9f9f9;
+
+	.demo-contact-form {
+		.form-group {
+			margin-bottom: 15px;
+
+			label {
+				display: block;
+				margin-bottom: 5px;
+				font-weight: bold;
+			}
+
+			input[type="text"],
+			input[type="email"],
+			textarea {
+				width: 100%;
+				padding: 8px;
+				border: 1px solid #ddd;
+				border-radius: 4px;
+				box-sizing: border-box;
+			}
+		}
+
+		button[type="submit"] {
+			background-color: #007cba;
+			color: #fff;
+			padding: 10px 15px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			font-size: 16px;
+
+			&:hover {
+				background-color: #005b8e;
+			}
+		}
+	}
+}

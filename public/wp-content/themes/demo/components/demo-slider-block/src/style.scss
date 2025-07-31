@@ -1,0 +1,109 @@
+.wp-block-demo-theme-demo-slider-block {
+	width: 100%;
+	overflow: hidden;
+
+	.swiper,
+	.swiper-container {
+		width: 100%;
+		height: auto;
+		overflow: hidden;
+		position: relative;
+	}
+
+	.swiper-wrapper {
+		display: flex;
+	}
+
+	.swiper-slide {
+		flex-shrink: 0;
+		width: auto; // Swiper regelt die Breite anhand slidesPerView
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		box-sizing: border-box;
+	}
+
+	.demo-slider-block__slide {
+		position: relative;
+		width: 100%;
+		max-width: 100%;
+		min-width: 300px;
+		aspect-ratio: 4 / 3;
+		background-size: cover;
+		background-position: center;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		overflow: hidden;
+
+		.demo-slider-block__overlay {
+			position: absolute;
+			inset: 0;
+			background-color: rgba(0, 0, 0, 0.5);
+			z-index: 1;
+		}
+
+		.demo-slider-block__content {
+			position: relative;
+			z-index: 2;
+			padding: 20px;
+			color: #fff;
+			max-width: 800px;
+
+			h2 {
+				font-size: 2rem;
+				margin-bottom: 10px;
+			}
+
+			p {
+				font-size: 1.1rem;
+			}
+		}
+	}
+
+	// /* Pagination */
+	// .swiper-pagination {
+	// 	position: absolute;
+	// 	bottom: 10px;
+	// 	left: 0;
+	// 	right: 0;
+	// 	z-index: 10;
+	// 	text-align: center;
+	// }
+
+	// .swiper-pagination-bullet {
+	// 	background: #000;
+	// 	opacity: 1;
+	// 	margin: 0 4px;
+	// }
+
+	// /* Navigation Buttons */
+	// .swiper-button-prev,
+	// .swiper-button-next {
+	// 	position: absolute;
+	// 	top: 50%;
+	// 	transform: translateY(-50%);
+	// 	width: 44px;
+	// 	height: 44px;
+	// 	background: rgba(0, 0, 0, 0.5);
+	// 	color: #fff;
+	// 	z-index: 20;
+	// 	border-radius: 50%;
+	// 	cursor: pointer;
+	// }
+
+	// .swiper-button-prev {
+	// 	left: 10px;
+	// }
+
+	// .swiper-button-next {
+	// 	right: 10px;
+	// }
+
+	// .swiper-button-prev::after,
+	// .swiper-button-next::after {
+	// 	font-size: 20px;
+	// 	color: #fff;
+	// }
+}

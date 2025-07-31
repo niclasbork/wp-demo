@@ -1,0 +1,19 @@
+{
+  "name": "demo-slider-block",
+  "version": "0.1.0",
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "main": "build/index.js",
+  "view": "build/view.js",
+  "scripts": {
+    "build": "wp-scripts build",
+    "start": "wp-scripts start"
+  },
+  "devDependencies": {
+    "@wordpress/scripts": "^26.0.0"
+  },
+  "dependencies": {
+    "swiper": "^11.2.10"
+  }
+}

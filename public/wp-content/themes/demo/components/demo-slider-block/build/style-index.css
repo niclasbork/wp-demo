@@ -1,0 +1,61 @@
+/*!***************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/style.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************/
+.wp-block-demo-theme-demo-slider-block {
+  width: 100%;
+  overflow: hidden;
+}
+.wp-block-demo-theme-demo-slider-block .swiper,
+.wp-block-demo-theme-demo-slider-block .swiper-container {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+}
+.wp-block-demo-theme-demo-slider-block .swiper-wrapper {
+  display: flex;
+}
+.wp-block-demo-theme-demo-slider-block .swiper-slide {
+  flex-shrink: 0;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+.wp-block-demo-theme-demo-slider-block .demo-slider-block__slide {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  min-width: 300px;
+  aspect-ratio: 4/3;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+.wp-block-demo-theme-demo-slider-block .demo-slider-block__slide .demo-slider-block__overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.wp-block-demo-theme-demo-slider-block .demo-slider-block__slide .demo-slider-block__content {
+  position: relative;
+  z-index: 2;
+  padding: 20px;
+  color: #fff;
+  max-width: 800px;
+}
+.wp-block-demo-theme-demo-slider-block .demo-slider-block__slide .demo-slider-block__content h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.wp-block-demo-theme-demo-slider-block .demo-slider-block__slide .demo-slider-block__content p {
+  font-size: 1.1rem;
+}
+
+/*# sourceMappingURL=style-index.css.map*/

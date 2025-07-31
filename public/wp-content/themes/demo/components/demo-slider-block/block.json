@@ -1,0 +1,91 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "demo-theme/demo-slider-block",
+	"version": "0.1.0",
+	"title": "Demo Slider Block",
+	"category": "widgets",
+	"icon": "images-alt2",
+	"description": "A responsive image slider using Swiper.js.",
+	"supports": {
+		"html": false,
+		"align": ["full"]
+	},
+	"attributes": {
+		"slides": {
+			"type": "array",
+			"default": [],
+			"items": {
+				"type": "object",
+				"properties": {
+					"mediaId": {
+						"type": "number",
+						"default": 0
+					},
+					"mediaUrl": {
+						"type": "string",
+						"default": ""
+					},
+					"mediaAlt": {
+						"type": "string",
+						"default": ""
+					},
+					"heading": {
+						"type": "string",
+						"source": "html",
+						"selector": "h2",
+						"default": ""
+					},
+					"description": {
+						"type": "string",
+						"source": "html",
+						"selector": "p",
+						"default": ""
+					}
+				}
+			}
+		},
+		"loop": {
+			"type": "boolean",
+			"default": true
+		},
+		"slidesPerView": {
+			"type": "number",
+			"default": 1
+		},
+		"spaceBetween": {
+			"type": "number",
+			"default": 0
+		},
+		"pagination": {
+			"type": "boolean",
+			"default": true
+		},
+		"paginationType": {
+			"type": "string",
+			"default": "bullets"
+		},
+		"navigation": {
+			"type": "boolean",
+			"default": true
+		},
+		"autoplay": {
+			"type": "boolean",
+			"default": false
+		},
+		"autoplayDelay": {
+			"type": "number",
+			"default": 2500
+		},
+		"autoplayDisableOnInteraction": {
+			"type": "boolean",
+			"default": false
+		}
+	},
+	"textdomain": "demo-slider-block",
+	"editorScript": "file:./build/index.js",
+	"editorStyle": "file:./build/index.css",
+	"style": "file:./build/style-index.css",
+	"viewScript": "file:./build/view.js",
+	"viewStyle": "file:./build/view.css"
+}

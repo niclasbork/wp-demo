@@ -1,0 +1,16 @@
+{
+  "name": "demo-contact-form-block",
+  "version": "0.1.0",
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "wp-scripts build",
+    "start": "wp-scripts start"
+  },
+  "keywords": [],
+  "devDependencies": {
+    "@wordpress/scripts": "^26.0.0"
+  }
+}

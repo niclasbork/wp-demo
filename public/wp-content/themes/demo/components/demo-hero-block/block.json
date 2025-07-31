@@ -1,0 +1,44 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "demo-theme/demo-hero-block",
+	"version": "0.1.0",
+	"title": "Demo Hero Block",
+	"category": "widgets",
+	"icon": "align-wide",
+	"description": "A full-width hero section with a background image and overlay text.",
+	"supports": {
+		"html": false,
+		"align": ["full"]
+	},
+	"attributes": {
+		"mediaId": {
+			"type": "number",
+			"default": 0
+		},
+		"mediaUrl": {
+			"type": "string",
+			"default": ""
+		},
+		"mediaAlt": {
+			"type": "string",
+			"default": ""
+		},
+		"heading": {
+			"type": "string",
+			"source": "html",
+			"selector": "h1",
+			"default": "Your Hero Heading"
+		},
+		"description": {
+			"type": "string",
+			"source": "html",
+			"selector": "p",
+			"default": "A short description for your hero section."
+		}
+	},
+	"textdomain": "demo-hero-block",
+	"editorScript": "file:./build/index.js",
+	"editorStyle": "file:./build/index.css",
+	"style": "file:./build/style-index.css"
+}
