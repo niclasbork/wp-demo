@@ -3,8 +3,8 @@
  *
  * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-registration/
  */
-import { registerBlockType } from '@wordpress/blocks';
-import { useBlockProps } from '@wordpress/block-editor';
+import { registerBlockType } from '@wordpress/blocks'
+import { useBlockProps } from '@wordpress/block-editor'
 
 /**
  * Lets webpack process CSS, SASS or SCSS files referenced in JavaScript files.
@@ -13,20 +13,20 @@ import { useBlockProps } from '@wordpress/block-editor';
  *
  * @see https://www.npmjs.com/package/@wordpress/scripts#using-css
  */
-import './style.scss';
+import './style.scss'
 
 /**
  * Internal dependencies
  */
-import Edit from './edit';
-import metadata from '../block.json';
+import Edit from './edit'
+import metadata from '../block.json'
 
 /**
  * Every block starts by registering a new block type definition.
  *
  * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-registration/
  */
-registerBlockType( metadata.name, {
+registerBlockType(metadata.name, {
 	/**
 	 * @see ./edit.js
 	 */
@@ -35,16 +35,21 @@ registerBlockType( metadata.name, {
 	 * @see ./save.js
 	 */
 	save: ({ attributes }) => {
-		const { mediaUrl, mediaAlt, heading, description } = attributes;
-		const blockProps = useBlockProps.save({ className: 'demo-hero-block' });
+		const { mediaUrl, mediaAlt, heading, description } = attributes
+		const blockProps = useBlockProps.save({ className: 'demo-hero-block' })
 		return (
-			<div { ...blockProps } style={{ backgroundImage: `url(${mediaUrl})` }}>
-				<div className="demo-hero-block__overlay"></div>
-				<div className="demo-hero-block__content">
-					<h1 className="demo-hero-block__heading">{heading}</h1>
-					<p className="demo-hero-block__description">{description}</p>
+			<div
+				{...blockProps}
+				style={{ backgroundImage: `url(${mediaUrl})` }}
+			>
+				<div className='demo-hero-block__overlay'></div>
+				<div className='demo-hero-block__content'>
+					<h1 className='demo-hero-block__heading'>{heading}</h1>
+					<p className='demo-hero-block__description'>
+						{description}
+					</p>
 				</div>
 			</div>
-		);
+		)
 	},
-} );
+})
